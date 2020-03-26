@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    background: #CDCDCD;
+}
+
+img {
+    width: 100%;
+}
+
+.splash {
+    margin-top: -5%;
+    margin-bottom: -3%;
+    background-image: url(billeder/splash.png);
+    background-size: cover;
+    width: 100vw;
+    height: 55vw;
+}
+
+.links {
+    /*  background-color: #123;*/
+    background-color: #051026;
+    background-image: linear-gradient(to bottom, #0003, transparent);
+    border-bottom: 1px solid #0003;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.links > a {
+    font-family: 'Titillium Web', sans-serif;
+    color: #69B7BF;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.links > a:hover {
+    background: rgb(50, 60, 80);
+    color: #adf;
+    text-decoration: none;
+}
+
+.links > .line {
+    background: #68a;
+    height: 1px;
+    pointer-events: none;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(var(--items), 1fr);
+    position: relative;
+}
+
+.links > .line {
+    opacity: 0;
+    transition: all .5s;
+    position: absolute;
+    bottom: 0;
+    left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+    width: var(--width, calc(100% / var(--items)));
+    --index: 0;
+}
+
+.links > a:hover ~ .line {
+    opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line {
+    --index: 1;
+}
+
+.links > a:nth-of-type(2):hover ~ .line {
+    --index: 2;
+}
+
+.links > a:nth-of-type(3):hover ~ .line {
+    --index: 3;
+}
+
+.links > a:nth-of-type(4):hover ~ .line {
+    --index: 4;
+}
+
+.links > a:nth-of-type(5):hover ~ .line {
+    --index: 5;
+}
+
+.links > a:nth-of-type(6):hover ~ .line {
+    --index: 6;
+}
+
+.links > a:nth-of-type(7):hover ~ .line {
+    --index: 7;
+}
+
+.links > a:nth-of-type(8):hover ~ .line {
+    --index: 8;
+}
+
+.links > a:nth-of-type(9):hover ~ .line {
+    --index: 9;
+}
+
+.links > a:nth-of-type(10):hover ~ .line {
+    --index: 10;
+}
+
+.links > a:last-of-type:hover ~ .line {
+    --index: var(--items);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.break {
+    background-image: url(billeder/drops.png);
+    background-attachment: fixed;
+    background-position: 100% 10%;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#info1 .container {
+    margin-top: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#info1 .picture {
+    flex-basis: 50vw;
+}
+
+#info1 .text {
+    flex-basis: 50vw;
+}
+
+#info2 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#info2 .picture {
+    flex-basis: 50vw;
+}
+
+#info2 .text {
+    flex-basis: 50vw;
+}
+
+#info3 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#info3 .picture {
+    flex-basis: 50vw;
+}
+
+#info3 .text {
+    flex-basis: 50vw;
+}
