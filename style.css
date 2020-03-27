@@ -9,8 +9,8 @@ img {
 
 .splash {
     margin-top: -5%;
-    margin-bottom: -3%;
-    background-image: url(billeder/splash.png);
+    margin-bottom: -10%;
+    background-image: url(billeder/FlashyFlashy_2_text_v2.png);
     background-size: cover;
     width: 100vw;
     height: 55vw;
@@ -21,14 +21,14 @@ img {
     background-color: #051026;
     background-image: linear-gradient(to bottom, #0003, transparent);
     border-bottom: 1px solid #0003;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 .links > a {
     font-family: 'Titillium Web', sans-serif;
     color: #69B7BF;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
     text-decoration: none;
     transition: all .5s;
@@ -117,6 +117,7 @@ img {
 }
 
 .sticky {
+    z-index: 21;
     position: fixed;
     top: 0;
     width: 100%;
@@ -132,45 +133,29 @@ img {
     margin-bottom: 1vw;
 }
 
-#info1 .container {
-    margin-top: 1vw;
+#shop .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-#info1 .picture {
-    flex-basis: 50vw;
+.carousel-item {
+    margin-top: -10%;
+    margin-bottom: -10%;
 }
 
-#info1 .text {
-    flex-basis: 50vw;
+.carousel {
+    width: 70%;
+    height: 100%;
 }
 
-#info2 .container {
+#ingredienser .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-#info2 .picture {
-    flex-basis: 50vw;
-}
-
-#info2 .text {
-    flex-basis: 50vw;
-}
-
-#info3 .container {
+#referencer .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-#info3 .picture {
-    flex-basis: 50vw;
-}
-
-#info3 .text {
-    flex-basis: 50vw;
+.col-sm-7 {
+    position: inherit;
 }
