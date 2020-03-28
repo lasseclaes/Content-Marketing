@@ -7,13 +7,36 @@ img {
     width: 100%;
 }
 
+h1 {
+    font-family: 'BeonMedium';
+    font-size: 2rem;
+}
+
+h5 {
+    color: #051026;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    color: #051026;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
+}
+
+.bg-dark {
+    background-color: #051026 ! important;
+}
+
+.navbar-dark .navbar-brand {
+    color: #69B7BF;
+}
+
 .splash {
-    margin-top: -5%;
-    margin-bottom: -10%;
-    background-image: url(billeder/FlashyFlashy_2_text_v2.png);
+    background-image: url(billeder/splash.png);
     background-size: cover;
-    width: 100vw;
-    height: 55vw;
+    width: 99vw;
+    height: 60vw;
 }
 
 .links {
@@ -127,10 +150,22 @@ img {
     background-image: url(billeder/drops.png);
     background-attachment: fixed;
     background-position: 100% 10%;
-    width: 100vw;
+    width: 99vw;
     height: 20vh;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#info img {
+    margin-bottom: -5%;
+}
+
+#info .text {
+    margin-top: 10%;
+}
+
+#info p {
+    font-size: 1.2rem;
 }
 
 #shop .container {
@@ -140,22 +175,48 @@ img {
 
 .carousel-item {
     margin-top: -10%;
-    margin-bottom: -10%;
+}
+
+.carousel-item img {
+    margin-bottom: 5%;
 }
 
 .carousel {
-    width: 70%;
+    width: 60%;
     height: 100%;
 }
 
+
 #ingredienser .container {
     display: flex;
+    justify-content: center;
 }
 
 #referencer .container {
     display: flex;
+    justify-content: center;
 }
 
 .col-sm-7 {
     position: inherit;
+}
+
+@font-face {
+    font-family: 'BeonMedium';
+    src: url('beon-webfont.eot');
+    src: local('☺'), url('beon-webfont.eot?#iefix') format('embedded-opentype'), url('font/beon-webfont.woff') format('woff'), url('beon-webfont.ttf') format('truetype'), url('beon-webfont.svg#BeonMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (min-width: 576px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header {
+        display: none;
+    }
 }
