@@ -8,8 +8,15 @@ img {
 }
 
 h1 {
+    color: #051026;
     font-family: 'BeonMedium';
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #051026;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
 }
 
 h5 {
@@ -18,11 +25,7 @@ h5 {
     font-size: 2rem;
 }
 
-p {
-    color: #051026;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5rem;
-}
+/* BURGERMENU */
 
 .bg-dark {
     background-color: #051026 ! important;
@@ -30,6 +33,12 @@ p {
 
 .navbar-dark .navbar-brand {
     color: #69B7BF;
+}
+
+.stickyB {
+    position: sticky;
+    top: 0;
+    z-index: 21;
 }
 
 .splash {
@@ -157,7 +166,7 @@ p {
 }
 
 #info img {
-    margin-bottom: -5%;
+    margin-top: 15%;
 }
 
 #info .text {
@@ -170,7 +179,12 @@ p {
 
 #shop .container {
     display: flex;
-    justify-content: center;
+}
+
+#shop p {
+    color: #051026;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5rem;
 }
 
 .carousel-item {
@@ -189,12 +203,61 @@ p {
 
 #ingredienser .container {
     display: flex;
-    justify-content: center;
+}
+
+#ingredienser p {
+    font-size: 1.2rem;
+}
+
+#ingredienser .indholdDrik {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+#ingredienser .indholdDrik h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 6rem;
+    color: #051026;
+}
+
+#ingredienser .sukker {
+    border-radius: 100%;
+    border: 5px solid #69B7BF;
+    padding: 1%;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+}
+
+#ingredienser .kulhydrater {
+    border-radius: 100%;
+    border: 5px solid #69B7BF;
+    padding: 1%;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+}
+
+#ingredienser .vitaminer {
+    border-radius: 100%;
+    border: 5px solid #69B7BF;
+    padding: 1%;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+}
+
+#ingredienser .kalorier {
+    border-radius: 100%;
+    border: 5px solid #69B7BF;
+    padding: 1%;
+    width: 20%;
+    height: 10%;
+    text-align: center;
 }
 
 #referencer .container {
     display: flex;
-    justify-content: center;
 }
 
 .col-sm-7 {
@@ -219,4 +282,51 @@ p {
     .header {
         display: none;
     }
+
+    .splash {
+        width: 100vw;
+    }
+
+    .carousel-item {
+        margin-top: -10%;
+    }
+
+    .carousel-item img {
+        margin-bottom: 5%;
+    }
+
+    .carousel {
+        width: 80%;
+    }
+
+    .break {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    #ingredienser .indholdDrik {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ingredienser .sukker {
+        width: 40%;
+        margin-bottom: 5%;
+    }
+
+    #ingredienser .kulhydrater {
+        width: 40%;
+        margin-bottom: 5%;
+    }
+
+    #ingredienser .vitaminer {
+        width: 40%;
+        margin-bottom: 5%;
+    }
+
+    #ingredienser .kalorier {
+        width: 40%;
+        margin-bottom: 10%;
+    }
+
 }
