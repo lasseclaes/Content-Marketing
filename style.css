@@ -48,7 +48,7 @@ h5 {
 .splash {
     background-image: url(billeder/Bottles_Splash_smaller.png);
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin-top: -3%;
 }
@@ -336,7 +336,7 @@ h5 {
 
 footer {
     background-color: #051026;
-    width: 100vw;
+    width: 100%;
     height: 20vh;
 }
 
