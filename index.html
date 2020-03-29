@@ -6,6 +6,7 @@
     <title>Streamer Fuel</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 </head>
@@ -130,17 +131,25 @@
                 <br>
                 <p>Vi har fire energidrikke at vælge i mellem.</p>
                 <br>
-                <h2>Original Flavour</h2>
-                <p>Med vores originale smag.</p>
+                <div class="original">
+                    <h2>Original Flavour</h2>
+                    <p>Med vores originale smag.</p>
+                </div>
                 <br>
-                <h2>Coconut Carnage</h2>
-                <p>Vores energidrik med smag af kokos. <span class="badge badge-secondary">Ny</span></p>
+                <div class="kokos">
+                    <h2>Coconut Carnage</h2>
+                    <p>Vores energidrik med smag af kokos. <span class="badge badge-secondary">Ny</span></p>
+                </div>
                 <br>
-                <h2>Tropical Animal</h2>
-                <p>En energidrik med smag af tropiske frugter.</p>
+                <div class="tropisk">
+                    <h2>Tropical Animal</h2>
+                    <p>En energidrik med smag af tropiske frugter.</p>
+                </div>
                 <br>
-                <h2>Orange Madness</h2>
-                <p>En forfriskende energidrik med appelsiner.</p>
+                <div class="appelsin">
+                    <h2>Orange Madness</h2>
+                    <p>En forfriskende energidrik med appelsiner.</p>
+                </div>
             </div>
             <br>
             <div class="indholdDrik d-flex flex-sm-row justify-content-around justify-content-center">
@@ -165,10 +174,36 @@
     </section>
     <div class="break">
     </div>
-    <section id="referencer d-flex justify-content-center">
-        <p>Referencer</p>
+    <section id="referencer">
+        <div class="overskrift">
+            <h1>Referencer</h1>
+        </div>
+        <div class="container d-flex justify-content-center flex-wrap">
+            <div class="ref1 col-sm-5">
+                <img src="billeder/Brian_Reference.jpg" alt="reference">
+                <h2>Brian</h2>
+                <p> “Jeg kan slet ikke være foruden min S-Fuel. Førhen drak jeg masser af Red-Bull, Monster og mange andre mærker, men jeg endte med at blive så syg. Jeg kan ikke finde ud af at drikke kaffe, da det smager for bittert for mig - så i dag er jeg meget mere fysisk aktiv, og tager endda ud og svømmer en gang imellem”</p>
+            </div>
+            <div class="ref2 col-sm-5">
+                <img src="billeder/sean.png" alt="reference">
+                <h2>Sean</h2>
+                <p>“På mit hold fortæller jeg dem alle om S-Fuel, vi sidder og spiller Overwatch og efter mange timers spilleri bliver mange af mine holdkammerater trætte, men jeg kan holde mit fokus, uden at ryste eller noget. Min holdtræning er blevet så meget bedre, at jeg ikke ved hvordan jeg kan være foruden”</p>
+            </div>
+        </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container d-flex justify-content-center flex-wrap">
+            <div class="kontakt">
+                <h3>Kontakt</h3>
+            </div>
+            <div class="adresse">
+                <h3>Adresse</h3>
+            </div>
+            <div class="medier">
+                <h3>Facebook</h3>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
